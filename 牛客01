@@ -1,0 +1,31 @@
+/*
+妈妈对小竹说，我的年龄是你的aa倍还要多bb岁！
+
+已知妈妈的年龄是xx岁。
+
+请问小竹的年龄是多少岁。
+输入描述:
+一行三个整数 a,b,x (1 \le a,b,x \le 10^9)a,b,x(1≤a,b,x≤10 
+9
+ )。
+输出描述:
+一行一个整数,小竹的年龄(数据保证一定能得到整数答案)。
+示例1
+输入
+
+5 6 31
+输出
+
+5
+*/
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner my =  new Scanner(System.in);
+        int a = my.nextInt();
+        int b = my.nextInt();
+        int x = my.nextInt();
+        int z = (x  -b) / a ;
+        System.out.println(z);
+    }
+}
