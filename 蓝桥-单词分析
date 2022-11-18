@@ -53,15 +53,19 @@ public class Main {
            a[word.charAt(i) - 'a']++;  // 让重复出现的字母以字典序，来++ 表示出现的次数
         }
 
-        char ch = 'a';
+      //  char ch = 'a';
+      int count = 0;
         int max = 0;
         for (int i = 0; i< 26; i++){
           if (a[i] > max ){
             max = a[i];         // 比哪个字典序对应的数字最大
-            ch = (char) ('a' + i);
+           count = i;
+        //    ch = (char) ('a' + i);
           }  // 因为是从前往后  所以相等时， 无需考虑
         }
-        System.out.println(ch);
+       // System.out.println(ch);
+       //也可以直接转换
+       System.out.println ((char) (count + 'a'));
         System.out.println(max);
         scan.close();
     }
