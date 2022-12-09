@@ -1,0 +1,36 @@
+/*题目描述
+本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。
+
+如下图所示，小明用从 11 开始的正整数“蛇形”填充无限大的矩阵。
+
+1 2 6 7 15 ...
+3 5 8 14 ...
+4 9 13 ...
+10 12 ...
+11 ...
+...
+copy
+容易看出矩阵第二行第二列中的数是 55。请你计算矩阵中第 2020 行第 2020 列的数是多少？
+
+运行限制
+最大运行时间：1s
+最大运行内存: 128M*/
+
+
+// 规律 n*n + (n-1)*(n-1);
+
+import java.util.Scanner;
+// 1:无需package
+// 2: 类名必须Main, 不可修改
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        //在此输入您的代码...
+
+
+        int a = 20 * 20 + 19*19 ;
+        System.out.println(a);
+        scan.close();
+    }
+}
